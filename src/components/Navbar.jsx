@@ -1,5 +1,6 @@
 import React from "react";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { Link } from "react-router-dom";
 
 
 
@@ -15,19 +16,19 @@ const Navbar = () => {
             <UserButton />
           </SignedIn>
         <li>
-          <a href="/" className="text-lg font-semibold text-black-600">
+          <Link to="/" className="text-lg font-semibold text-black-600">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/protected" className="text-lg font-semibold text-black-600">
+          <Link to="/protected" className="text-lg font-semibold text-black-600">
             Protected
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/public" className="text-lg font-semibold text-black-600">
+          <Link to="/public" className="text-lg font-semibold text-black-600">
             Public
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
