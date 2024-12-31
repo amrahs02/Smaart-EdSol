@@ -14,8 +14,8 @@ function App() {
         <Route path="/" element={<Home />}>
           <Route index element={<Hero />} />
           {/* Wrap Protected route with ProtectedRoute */}
-          <Route path="protected" element={<ProtectedRoute element={<Protected />} />} />
-          <Route path="public" element={<Public />} />
+          <Route path="/protected" element={<ProtectedRoute element={<Protected />} />} />
+          <Route path="/public" element={<Public />} />
         </Route>
       </Routes>
     </BrowserRouter>
