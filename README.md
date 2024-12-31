@@ -1,9 +1,21 @@
-# React + Vite
+# React App with Clerk Authentication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to use Clerk for user authentication in a React app and protect specific routes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Smaart-EdSol
+- **Clerk Authentication**: Protects routes using Clerk's authentication system.
+- **Protected Route**: If the user is not logged in, they are redirected to the home page with a message.
+
+## Folder Structure
+/src
+  /components
+    - Home.js            # Home component (public)
+    - Protected.js       # Protected page (requires login)
+  App.js                 # Main app routing
+  index.js               # Clerk configuration
+
+
+## How It Works
+The home page (/) is publicly accessible.
+The protected page (/protected) requires the user to be signed in. If the user is not logged in, they will be redirected to the home page with a message: "To use this page, you have to log in."
