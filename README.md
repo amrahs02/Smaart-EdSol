@@ -1,19 +1,11 @@
 # React App with Clerk Authentication
 
-This project demonstrates how to use Clerk for user authentication in a React app and protect specific routes.
+This project shows how to use Clerk for user authentication in a React app and protect specific routes.
 
 ## Features
 
 - **Clerk Authentication**: Protects routes using Clerk's authentication system.
 - **Protected Route**: If the user is not logged in, they are redirected to the home page with a message.
-
-## Folder Structure
-/src
-  /components
-    - Home.js            # Home component (public)
-    - Protected.js       # Protected page (requires login)
-  App.js                 # Main app routing
-  index.js               # Clerk configuration
 
 
 ## How It Works
